@@ -1,2 +1,2 @@
 # hbfv.github.io
-# just a page i use to brwose websites i frequently use
+# Just a page I created to browse websites I frequently use.
