@@ -1,60 +1,60 @@
-<!DOCTYPE html>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
 <head>
-<title>itshbfv.me</title>
-<style>
-@font-face {
-    font-family: "headline";
-    src: url("headline.ttf");
-}
 
-body {
-	background-image: url("kitty.gif");
-	font-family: 'headline', Fallback, sans-serif;
-	background-size: cover;
-}
+<title>Leicester Building Company</title>
 
-h2 {
-	text-align: center;
-	margin: auto;
-	font-size: 25px;
-	color: white;
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-}
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel='shortcut icon' type='image/x-icon' href='Content/logo.png' />
 
-h1 {
-	text-align: center;
-	margin: auto;
-	font-size: 50px;
-	color: white;
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-}
-.cse .gsc-control-cse,
-.gsc-control-cse {
-      background-color:transparent !important;
-      border-color:transparent !important;
-}
-</style>
-<link rel="icon" type="image/png" href="webicon.ico">
+
+<!--Jquery script for animating the navigation between pages from w3schools.com-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
+
+
 </head>
-
 <body>
 
-<div class="container">
+<div id="navbar">
+	<a href="#homepg" id="home">HBFV</a>
+	<a href="#links" class="nav"><p>Links</p></a>
+	<a href="#search" class="nav"><p>Search</p></a>
+</div>
+	
+	
+	
+	
+<div id="homepg">
+	<p id="wel">Welcome to itshbfv.me</p>
+</div>
 
-<header>
-	<h1>itshbfv.me</h1>
-	<h2>SEARCH</h2>
-</header>
-<nav>
-	<script>
+<div id="search">
+	<script class="pad">
   	(function() {
     	var cx = '007743902636424095615:kwjo3vo2wmm';
     	var gcse = document.createElement('script');
@@ -65,9 +65,28 @@ h1 {
     	s.parentNode.insertBefore(gcse, s);
   	})();
 	</script>
-</nav>
-
-<gcse:search></gcse:search>
+	<gcse:search></gcse:search>
 </div>
+
+<div id="links">
+</div>
+
+<div id="sitemap">
+	<table class="table">
+		<tr>
+			<th><a href="#homepg" id="smn">Home</a></th>
+			<th><a href="#search" id="smn">Search</a></th>
+			<th><a href="#links" id="smn">Links</a></th>
+		</tr>
+	</table>
+	<p class="content">© 2018 Hbfv</p>
+</div>
+
+
+
+
 </body>
+
 </html>
+
+
