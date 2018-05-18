@@ -12,6 +12,7 @@
 * { 
   margin: 0; 
   padding: 0;
+  overflow-y:hidden;
 }
 
 p {
@@ -26,7 +27,6 @@ body {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	overflow-y:hidden;
 }
 
 
