@@ -1,0 +1,157 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+<head>
+
+<title>Leicester Building Company</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel='shortcut icon' type='image/x-icon' href='Content/logo.png' />
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+<!--Jquery script for animating the navigation between pages from w3schools.com-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
+
+
+</head>
+<body>
+
+<div id="navbar">
+	<a href="#homepg" id="home"><img src="Content/logo.png" alt="Logo"/></a>
+	<a href="#contactus" id="nav1"><p>Contact Us</p></a>
+	<a href="#areaspg" id="nav2"><p>Find Us</p></a>
+	<a href="#aboutus" id="nav3"><p>About Us</p></a>
+	
+	
+	<div class="dropdown">
+		<button class="dropbtn"></button>
+		<div class="dropdown-content">
+		<a href="#aboutus">About Us</a>
+		<a href="#areaspg">Find Us</a>
+		<a href="#contactus">Contact Us</a>
+		</div>
+	</div>
+	
+	<script>
+		window.onscroll = () => {
+		const nav = document.querySelector('#navbar');
+		if(this.scrollY <= 160) nav.className = ''; else nav.className = 'scroll';
+		};
+	</script>
+	
+	
+	
+</div>
+
+
+<div id="homepg">
+	<p id="wp1">Leicester's most renowned building company welcomes you</p>
+</div>
+
+
+<div id="aboutus">
+	<h1 class="header">About Us</h1>
+	<p class="content">Leicester Building Company is a small family run business that is small enough to care but big enough to cope with residential building projects. We formed recently but our members of the company have in excess of 20 years’ experience in the building trade from bathroom installations to new developments.</p>
+	<div id="aboutimgs">
+		<img src="Content/ab1.jpg" alt="1" id="ab1"/>
+		<img src="Content/ab2.jpg" alt="2" id="ab2"/>
+		<img src="Content/ab3.jpg" alt="3" id="ab3"/>
+	</div>
+	</table>
+		
+</div>
+
+
+<div id="areaspg">
+	<h1 class="header">Find Us</p>
+	<p class="content">Currently we only provide for our home county Leicestershire due to how small our company is currently however, when it is possible we may expand further out to provide our building services for more people. Our company building resides in the city centre and we can provide our building services within a days notice there whilst outside of the city centre we will take slightly longer but will provide the same high quality building we always provide!</p>
+		
+		 <div id="map"></div>
+		<script>
+		  function initMap() {
+			var uluru = {lat: 52.6262774, lng: -1.1317974};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 13,
+			  center: uluru
+			});
+			var marker = new google.maps.Marker({
+			  position: uluru,
+			  map: map
+			});
+		  }
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVs4lP95tLjkfhKoBZ1FT5CXB1X2pbl1Q&callback=initMap">
+		</script>
+	</div>
+
+
+<div id="contactus">
+	<h1 class="header">How You Can Contact Us</p>
+	<p class="content">You can get in contact with our team via:</p>
+	<div id="cuform">
+		<form action="mailto:dharmeshv@regent-college.ac.uk" method="post" enctype="text/plain">
+			Name:<br>
+			<input type="text" name="name">
+			<br>
+			Message:<br>
+			<input type="text" name="msg">
+			<br><br>
+			<input type="submit" value="Submit">
+		</form> 
+	</div>
+	
+	<div id="contactimgs">
+		<a href="#contactus"><img src="Content/facebookicon.png" alt="1" id="fbic"/></a>
+		<a href="#contactus"><img src="Content/twittericon.png" alt="1" id="twic"/></a>
+	</div>
+</div>
+
+<div id="sitemap">
+	<div id="links">
+		<a href="#homepg" id="nav4">Home</a>
+		<a href="#aboutus" id="nav4">About Us</a>
+		<a href="#areaspg" id="nav4">Find Us</a>
+		<a href="#contactus" id="nav4">Contact Us</a>
+	</div>
+	
+	
+	<div id="foot">
+		<p class="content">© 2018 Leicester Building Company</p>
+	</div>
+</div>
+
+
+
+
+</body>
+
+</html>
+
+
