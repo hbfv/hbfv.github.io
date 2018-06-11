@@ -225,24 +225,7 @@ body {
 	.content {
 		font-size:12px;
 	}
-	
-		/*Style of the dropdown button*/
-	.dropbtn {
-		background-color:Transparent;
-		color:white;
-		padding:20px;
-		border:none;
-		cursor:pointer;
-		float:right;
-		height:40px;
-		background-image:url("Content/dropdown.png");
-		background-size:40px 40px;
-		background-repeat:no-repeat;
-		background-attachment:local;
 		
-	}
-
-	
 	#latest1 {
 		width:100vw;
 	}
