@@ -1,0 +1,74 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+<head>
+
+<title>Hbfv</title>
+
+<!--Link to the CSS file and the fabicon (the icon that appears in the upper right of the browser)-->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="w3.css">
+<link rel='shortcut icon' type='image/x-icon' href='Content/logo.png' />
+
+<!--Makes sure the website displays accordingly on both desktop and mobile devices-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+<!--Jquery script for animating the navigation between pages from w3schools.com-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
+</head>
+<body>
+
+<div id="navbar">
+	<a href="#homepg" id="home"><img src="Content/logo.png" alt="Logo will be here"/></a>	
+	
+	<div class="dropdown">
+		<button class="dropbtn"></button>
+		<div class="dropdown-content w3-animate-opacity">
+			<a href="#Latest">Latest</a>	
+		</div>
+	
+	</div>
+		
+</div>
+<div id="homepg">
+	<p id="wp1">Welcome to my website</p>
+</div>
+
+<div id="Latest">
+	<h1 class="header">Latest</h1>
+	<div class="inner">
+		<p class="content" id="latest1">This section of my website is where I like to talk about the latest anime series I am looking forward to most. For the summer simulcasts I am very much looking forward to watch 'Attack On Titan' season 3. After reading all of the manga chapters this season 3 looks promising as Eren Yeager's basement will finally be revealed and people who have exclusively watched the anime will love it!</p>
+		<iframe id="latest2" width="560" height="315" src="https://www.youtube.com/embed/pwie-ybq7vo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+</div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,257 @@
+
+/*Imports the font to the website*/
+@font-face {
+	font-family: "KarlaR";
+	src: url("content/KarlaR.ttf");
+}
+
+/*The '*' affects all elements on the HTML page*/
+* { 
+  margin: 0; 
+  padding: 0;
+}
+
+/*This affects every p tag on the HTML page*/
+p {
+	padding-left:5%;
+	padding-right:5%;
+}
+
+/*This affects most things regarding the body of the page(most of the content)*/
+body {
+	margin:0;
+	font-family:KarlaR;
+	background-image:url("Content/wppr.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+
+/* Navigation Bar */
+#navbar {
+	position:fixed;
+	width: 100%;
+	top:0;
+	height:40px;
+	white-space:nowrap;
+	z-index:100;
+	background-color:rgba(53, 53, 53, 1);
+}
+
+/*LBC Logo navigation code*/
+#home img {
+	height: 100%;
+	width: auto;
+}
+
+#home img:hover {
+	background-color:rgb(33, 33, 33);
+}
+
+
+
+
+/*Tells the home page how to look and organise itself*/
+#homepg {
+	position:relative;
+	width:100%;
+	height:100vh;
+	font-size:0px;
+	overflow-x:hidden;
+	
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+
+/*This is the large text you see when you first open my website*/
+#wp1 {
+	z-index:1;
+	text-align:center;
+	color:white;
+	font-size:calc(3vw + 3vh + 2vmin);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+/*Tells the find us page how to look and organise itself*/
+#Latest {
+	color:white;
+	position:relative;
+	width:100%;
+	height:100vh;
+	background-color:rgba(0, 57, 150, 0.95);
+	text-align:center;
+	font-size:0px;
+	overflow-x:hidden;
+}
+
+.inner {
+	display:flex;
+	width:100vw;
+	align-items:center;
+	flex-wrap:wrap;
+}
+
+
+#latest1 {
+	width:50vw;
+	text-align:left;
+	justify-content:flex-start;
+}
+
+#latest2 {
+	justify-content:flex-end;
+}
+
+
+/*Tells the about us page how to look and organise itself*/
+#SocialMedia {
+	background-color:rgba(0, 66, 175, 0.95);
+	position:relative;
+	width:100%;
+	height:100vh;
+	text-align:center;
+	font-size:0px;
+	overflow-x:hidden;
+	color:white;
+}
+
+
+
+
+
+/*General class attributes, affects every header and plain text on the page*/
+.header {
+	font-size:48px;
+	font-weight:bold;
+	padding-top:60px;
+	text-align:center;
+	text-decoration:underline;
+}
+
+.content {
+	font-size:20px;
+	font-weight:normal;
+	padding-top:5px;
+}
+
+		/*Style of the dropdown button*/
+	.dropbtn {
+		background-color:Transparent;
+		color:white;
+		padding:20px;
+		border:none;
+		cursor:pointer;
+		float:right;
+		height:40px;
+		background-image:url("Content/dropdown.png");
+		background-size:40px 40px;
+		background-repeat:no-repeat;
+		background-attachment:local;
+		
+	}
+
+	/*This is needed to position the dropdown content*/
+	.dropdown {
+		display:flex;
+		float:right;
+		flex-direction:column;
+		text-align:center;
+	}
+
+	/*The content of the dropdown menu(hidden by default)*/
+	.dropdown-content {
+		display: none;
+		background-color:rgba(33, 33, 33, 0.5);
+		position: absolute;
+		min-width:100vw;
+		right:0px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		flex-direction:column;
+	}
+
+	/*All links inside the dropdown menu*/
+	.dropdown-content a {
+		color: white;
+		font-size:calc(1vw + 1vh + 0.7vmin);
+		padding-top:2vh;
+		padding-bottom:2vh;
+		text-decoration: none;
+		display: flex;
+		justify-content:center;
+	}
+
+	/*Change the colour of of the dropdown links on hover*/
+	.dropdown-content a:hover {background-color:rgba(33, 33, 33, 0.5)}
+
+	/*Shows the dropdown menu when hovered upon*/
+	.dropdown:hover .dropdown-content {
+		display:flex;
+		margin-top:40px;
+	}
+
+	/*Change the background color of the dropdown button when hovered upon and when the dropdown content is shown*/
+	.dropdown:hover .dropbtn {
+		background-color:rgb(33, 33, 33);
+	}
+	
+
+
+
+
+
+
+
+/*How the website appears when in mobile mode aka less than 600 pixels wide*/
+@media screen and (max-width: 1120px) {
+	
+	
+	/*Makes navigation bar smaller*/
+	#navbar {
+		height:40px;
+	}
+	
+	/*Reduces the padding at the top of each page to correct the spacing between headers and content in mobile mode*/
+	.header {
+		font-size:36px;
+		padding-top:45px;
+	}
+	
+	.content {
+		font-size:12px;
+	}
+	
+		/*Style of the dropdown button*/
+	.dropbtn {
+		background-color:Transparent;
+		color:white;
+		padding:20px;
+		border:none;
+		cursor:pointer;
+		float:right;
+		height:40px;
+		background-image:url("Content/dropdown.png");
+		background-size:40px 40px;
+		background-repeat:no-repeat;
+		background-attachment:local;
+		
+	}
+
+	
+	#latest1 {
+		width:100vw;
+	}
+	
+	#latest2 {
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:10px;
+		justify-content:center;
+		align-items:flex-end;
+	}
+}
