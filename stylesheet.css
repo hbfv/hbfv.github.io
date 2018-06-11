@@ -21,7 +21,7 @@ p {
 body {
 	margin:0;
 	font-family:KarlaR;
-	background-image:url("Content/wppr.jpg");
+	background-image:url("content/wppr.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
