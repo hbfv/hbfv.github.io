@@ -148,7 +148,7 @@ body {
 		cursor:pointer;
 		float:right;
 		height:40px;
-		background-image:url("Content/dropdown.png");
+		background-image:url("content/dropdown.png");
 		background-size:40px 40px;
 		background-repeat:no-repeat;
 		background-attachment:local;
