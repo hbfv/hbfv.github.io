@@ -261,6 +261,6 @@ body {
 
 
 	.dropdown-content a {
-		font-size:calc(0.8vw + 0.8vh + 0.7vmin);
+		font-size:calc(1vw + 1vh + 1vmin);
 	}	
 }
