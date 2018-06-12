@@ -257,5 +257,10 @@ body {
 	height:auto;
 	margin-top:10px;
 	flex-grow:1;
-}
+	}
+
+
+	.dropdown-content a {
+		font-size:calc(0.8vw + 0.8vh + 0.7vmin);
+	}	
 }
