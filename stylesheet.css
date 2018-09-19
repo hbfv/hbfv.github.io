@@ -36,7 +36,13 @@ body {
 	height:40px;
 	white-space:nowrap;
 	z-index:100;
+	background-color:rgba(28, 28, 28, 0);
+	transition: all 0.5s ease;
+}
+
+#navbar.transparent {
 	background-color:rgba(28, 28, 28, 1);
+	transition: all 0.5s ease;
 }
 
 /*LBC Logo navigation code*/
@@ -46,7 +52,11 @@ body {
 }
 
 #home img:hover {
-	background-color:rgb(33, 33, 33);
+	background-color:rgba(33, 33, 33, 0);
+}
+
+#home.transparent img:hover {
+	background-color:rgba(33, 33, 33, 1);
 }
 
 
@@ -69,12 +79,14 @@ body {
 #wp1 {
 	z-index:1;
 	text-align:center;
-	color:black;
+	color:white;
 	font-size:calc(3vw + 3vh + 2vmin);
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	user-select:none;
+	text-shadow: 4px 4px #000000;
+	text-transform: uppercase;
 }
 
 
@@ -97,6 +109,7 @@ body {
 	align-items:center;
 	flex-wrap:wrap;
 	flex-direction:column;
+	justify-content:space-between;
 }
 
 
@@ -109,46 +122,28 @@ body {
 	justify-content:flex-end;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:10px;
+	margin-top:2vh;;
 	flex-grow:1;
 }
 
-
-/*Tells the about us page how to look and organise itself*/
-#fiveaside {
-	background-color:rgba(45, 45, 45, 1);
+#Football {
+	color:white;
 	position:relative;
 	width:100%;
 	height:100vh;
+	background-color:rgba(45, 45, 45, 1);
 	text-align:center;
 	font-size:0px;
 	overflow-x:hidden;
-	color:white;
 	user-select:none;
 }
 
-#fiveaside1 {
-	text-align:center;
-	justify-content:flex-start;
-}
-
-#fiveaside2 {
-	justify-content:center;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:10px;
-	flex-grow:1;
-}
-
-#fiveaside3 {
-	text-align:center;
-	width:100vw;
+#ltable {
+	margin-top:2vh;
+	flex-direction:column;
+	align-items:flex-end;
 	justify-content:flex-end;
-	flex-wrap:wrap;
 }
-
-
-
 
 
 
@@ -195,13 +190,19 @@ body {
 	/*The content of the dropdown menu(hidden by default)*/
 	.dropdown-content {
 		display: none;
-		background-color:rgba(33, 33, 33, 0.5);
+		background-color:rgba(33, 33, 33, 0);
 		position: absolute;
 		min-width:100vw;
 		right:0px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 1;
 		flex-direction:column;
+		transition: all 0.4s ease;
+	}
+	
+	.dropdown-content.transparent {
+		background-color:rgba(33, 33, 33, 0.5);
+		transition: all 0.4s ease;
 	}
 
 	/*All links inside the dropdown menu*/
@@ -217,7 +218,7 @@ body {
 
 	/*Change the colour of of the dropdown links on hover*/
 	.dropdown-content a:hover {background-color:rgba(33, 33, 33, 0.5)}
-
+	
 	/*Shows the dropdown menu when hovered upon*/
 	.dropdown:hover .dropdown-content {
 		display:flex;
@@ -226,12 +227,8 @@ body {
 
 
 
-
-
-
-
 /*How the website appears when in mobile mode aka less than 600 pixels wide*/
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 575px) {
 	
 	
 	/*Makes navigation bar smaller*/
@@ -249,18 +246,19 @@ body {
 		font-size:12px;
 	}
 	
+	
 	#latest2 {
-	justify-content:flex-end;
-	margin-left:auto;
-	margin-right:auto;
-	width:auto;
-	height:auto;
-	margin-top:10px;
-	flex-grow:1;
+		justify-content:flex-end;
+		margin-left:auto;
+		margin-right:auto;
+		width:280px;
+		height:156px;
+		margin-top:10px;
+		flex-grow:1;
 	}
-
 
 	.dropdown-content a {
 		font-size:calc(1vw + 1vh + 1vmin);
 	}	
 }
+
