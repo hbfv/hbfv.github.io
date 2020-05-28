@@ -75,7 +75,7 @@ $(window).scroll(function() {
 	<div class="dropdown">
 		<button class="dropbtn"></button>
 		<div class="dropdown-content w3-animate-opacity">
-			<a href="#Latest">Anime</a>
+			<a href="#Live">Livestream</a>
 			<a href="#Football">Football</a>			
 		</div>
 	
@@ -86,11 +86,24 @@ $(window).scroll(function() {
 	<p id="wp1">HBFV</p>
 </div>
 
-<div id="Latest">
-	<h1 class="header">Anime</h1>
+<div id="Live">
+	<h1 class="header">Livestream</h1>
 	<div class="inner">
-		<p class="content" id="latest1">We're now half way through Attack On Titan Season 3 and the anime is slowly moving onto the 'Return To Shinganshina' arc where they they will return to where it all began. </p>
-		<iframe id="latest2" width="560" height="315" src="https://www.youtube.com/embed/yXaJJy00WJk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<p class="content" id="latest1">Watch me live on Twitch!</p>
+		<!-- Add a placeholder for the Twitch embed -->
+    		<div id="twitch-embed"></div>
+
+    		<!-- Load the Twitch embed script -->
+    		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    		<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+		<script type="text/javascript">
+		      new Twitch.Embed("twitch-embed", {
+			width: 854,
+			height: 480,
+			channel: "itz_hb",
+		      });
+		</script>
 	</div>
 </div>
 
