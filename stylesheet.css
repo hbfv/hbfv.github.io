@@ -234,8 +234,8 @@ body {
 	}
 
 	.twitch .twitch-video iframe {
-	  width: 45vw;
-	  height: 20vh;
+	  width: 50vw;
+	  height: 50vh;
 	}
 
 /*How the website appears when in mobile mode aka less than 600 pixels wide*/
