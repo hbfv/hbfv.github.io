@@ -226,8 +226,11 @@ body {
 	}
 
 	.twitch .twitch-video {
-	  position: relative;
-	  height: 0;
+		justify-content:flex-end;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:2vh;;
+		flex-grow:1;
 	}
 
 	.twitch .twitch-video iframe {
@@ -279,22 +282,5 @@ body {
 		font-size:calc(1vw + 1vh + 1vmin);
 	}	
 	
-	  .twitch {
-	    position: relative;
-	  }
-
-	  .twitch .twitch-video {
-	    width: 75%;
-	    padding-top: 42.1875%;
-	  }
-
-	  .twitch .twitch-chat {
-	    width: 25%;
-	    height: auto;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    bottom: 0;
-	  }
 }
 
