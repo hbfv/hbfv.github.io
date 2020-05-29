@@ -172,7 +172,7 @@ body {
 	/*The content of the dropdown menu(hidden by default)*/
 	.dropdown-content {
 		display: none;
-		background-color:rgba(220,220,220, 0);
+		background-color:rgba(220,220,220, 0.3);
 		position: absolute;
 		min-width:10vw;
 		right: 0 !important;
@@ -183,7 +183,7 @@ body {
 	}
 	
 	.dropdown-content.transparent {
-		background-color:rgba(220,220,220, 0.5);
+		background-color:rgba(220,220,220, 0.3);
 		transition: all 0.4s ease;
 	}
 
