@@ -226,7 +226,6 @@ body {
 	}
 
 	.twitch .twitch-video {
-	  padding-top: 56.25%;
 	  position: relative;
 	  height: 0;
 	}
@@ -235,7 +234,6 @@ body {
 	  position: absolute;
 	  width: 45vw;
 	  height: 20vh;
-	  top: 0;
 	}
 
 	.twitch .twitch-chat {
