@@ -250,9 +250,10 @@ body {
 		flex-grow:1;
 	}
 
-	.dropdown-content a {
-		font-size:calc(1vw + 1vh + 1vmin);
-	}	
+	.dropdown {
+		display: none;
+	}
+	
 	
 	.twitch .twitch-video iframe {
 	  width: 75;
