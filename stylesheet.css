@@ -272,5 +272,10 @@ body {
 		font-size:calc(1vw + 1vh + 1vmin);
 	}	
 	
+	.twitch .twitch-video iframe {
+	  width: 75;
+	  height: 45vh;
+	}
+	
 }
 
