@@ -226,13 +226,10 @@ body {
 	}
 
 	#twitch-embed {
-		display: auto;
+		width: 854;
+		height: 480;
 	}
 	
-	#twitch-embed-mobile {
-		display: none;
-	}
-
 
 
 /*How the website appears when in mobile mode aka less than 600 pixels wide*/
