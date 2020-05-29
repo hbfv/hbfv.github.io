@@ -275,11 +275,8 @@ body {
 	
 	
 	#twitch-embed {
-		display: none;
-	}
-	
-	#twitch-embed-mobile {
-		display: auto;
+		width: 427;
+		height: 240;
 	}
 	
 }
