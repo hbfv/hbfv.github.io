@@ -225,6 +225,14 @@ body {
 		margin-top:40px;
 	}
 
+	#twitch-embed {
+		display: auto;
+	}
+	
+	#twitch-embed-mobile {
+		display: none;
+	}
+
 
 
 /*How the website appears when in mobile mode aka less than 600 pixels wide*/
@@ -264,5 +272,15 @@ body {
 	.dropdown-content a {
 		font-size:calc(1vw + 1vh + 1vmin);
 	}	
+	
+	
+	#twitch-embed {
+		display: none;
+	}
+	
+	#twitch-embed-mobile {
+		display: auto;
+	}
+	
 }
 
