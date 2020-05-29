@@ -126,25 +126,17 @@ body {
 	flex-grow:1;
 }
 
-#Football {
+#Social {
 	color:white;
 	position:relative;
 	width:100%;
 	height:100vh;
-	background-color:rgba(45, 45, 45, 1);
+	background-color:rgba(65,105,225, 1);
 	text-align:center;
 	font-size:0px;
 	overflow-x:hidden;
 	user-select:none;
 }
-
-#ltable {
-	margin-top:2vh;
-	flex-direction:column;
-	align-items:flex-end;
-	justify-content:flex-end;
-}
-
 
 
 /*General class attributes, affects every header and plain text on the page*/
