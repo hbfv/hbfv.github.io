@@ -1,7 +1,7 @@
 <!DOCTYPE html
 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" scroll-behavior: smooth> 
 
 <head>
 <title>Hbfv</title>
@@ -63,16 +63,6 @@ $(window).scroll(function() {
   }
 });
 </script>
-
-<script>
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
-</script>
 </head>
 
 
@@ -130,6 +120,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 
 </html>
+
 
 
 
