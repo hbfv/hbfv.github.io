@@ -65,18 +65,12 @@ $(window).scroll(function() {
 </script>
 
 <script>
-var $root = $('html, body');
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
-$('a[href^="#"]').click(function() {
-    var href = $.attr(this, 'href');
-
-    $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function () {
-        window.location.hash = href;
-    });
-
-    return false;
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });
 </script>
 </head>
@@ -136,6 +130,7 @@ $('a[href^="#"]').click(function() {
 
 
 </html>
+
 
 
 
