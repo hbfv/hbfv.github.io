@@ -17,6 +17,10 @@ p {
 	padding-right:5%;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /*This affects most things regarding the body of the page(most of the content)*/
 body {
 	margin:0;
@@ -268,6 +272,7 @@ body {
   		margin-right: auto;
 	}
 }
+
 
 
 
